@@ -135,6 +135,7 @@ def dingtalk_push(sendkey,text):
         "text": {"content": text},}
     String_textMsg = json.dumps(String_textMsg)
     res = requests.post(webhook, data=String_textMsg, headers=HEADERS)
+    print("dingding " + res.text)
 
 
 # Telegram Bot Push
